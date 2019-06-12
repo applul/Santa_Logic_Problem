@@ -4,8 +4,10 @@ const fs = require('fs');
 
 fs.readFile('./input.txt', (err, data) => {
     const Senko = (JSON.stringify(data))
+    // const Holo = Senko.split(", ");
     if (err) {
         console.log('Error!!!! Please find out the problem and Fix It ASAP!!!!')
     }
-    console.log(Senko);
+    // console.log(Holo)
+    // console.log(Holo.length)
 })
