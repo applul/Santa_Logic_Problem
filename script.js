@@ -1,6 +1,7 @@
 const fs = require('fs'); 
 
 fs.readFile('./input.txt', (err, data) => {
+    console.time("Santa's Challenge");
     const Senko = (JSON.stringify(data))
     const SenkoV2 = Senko.replace('{"type":"Buffer","data":[', "");
     const SenkoV3 = SenkoV2.replace(']}', "");
@@ -8,7 +9,7 @@ fs.readFile('./input.txt', (err, data) => {
     if (err) {
         console.log('Error!!!! Please find out the problem and Fix It ASAP!!!!')
     }
-    const SeibaDown = function() {
+    const SeibaUp = function() {
         let SubNumber = 0
         for (i=0; i< Holo.length; i++) {
             if (Holo[i] === "40") {
@@ -17,10 +18,11 @@ fs.readFile('./input.txt', (err, data) => {
         }
         return SubNumber;
     }
-    const SeibasNumber = SeibaDown();
-    const HolosNumber = Holo.length - SeibasNumber;
-    const FinalAnswer = SeibasNumber - HolosNumber;
+    const SeibaNum = SeibaUp();
+    const HoloNum = Holo.length - SeibaNum;
+    const FinalAnswer = SeibaNum - HoloNum;
     console.log("Final Answer:", FinalAnswer)
+    console.timeEnd("Santa's Challenge")
 
 //     // console.log(Senko);
 //     // console.log(SenkoV2);
@@ -30,4 +32,4 @@ fs.readFile('./input.txt', (err, data) => {
 //     // console.log(Holo)
 //     console.log("Holo length", Holo.length)
 //     console.log("SenkoV3 Length", SenkoV3.length)
-// })
+})
