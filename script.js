@@ -10,10 +10,21 @@ fs.readFile('./input.txt', (err, data) => {
     if (err) {
         console.log('Error!!!! Please find out the problem and Fix It ASAP!!!!')
     }
+    const SeibaDown = function() {
+        let SubNumber = 0
+        for (i=0; i< Holo.length; i++) {
+            if (Holo[i] === "40") {
+                SubNumber++;
+            }
+        }
+        return SubNumber;
+    }
+    const SeibasNumber = SeibaDown();
     // console.log(Senko);
     // console.log(SenkoV2);
     // console.log(SenkoV3);
-    console.log(Holo)
+    console.log("SeibaDown Number", SeibasNumber)
+    // console.log(Holo)
     console.log("Holo length", Holo.length)
     console.log("SenkoV3 Length", SenkoV3.length)
 })
