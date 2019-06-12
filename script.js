@@ -1,5 +1,3 @@
-var master_number = 0;
-
 const fs = require('fs'); 
 
 fs.readFile('./input.txt', (err, data) => {
@@ -24,12 +22,12 @@ fs.readFile('./input.txt', (err, data) => {
     const FinalAnswer = SeibasNumber - HolosNumber;
     console.log("Final Answer:", FinalAnswer)
 
-    // console.log(Senko);
-    // console.log(SenkoV2);
-    // console.log(SenkoV3);
-    console.log("SeibaDown Number", SeibasNumber)
-    console.log("HolosNumber", HolosNumber)
-    // console.log(Holo)
-    console.log("Holo length", Holo.length)
-    console.log("SenkoV3 Length", SenkoV3.length)
-})
+//     // console.log(Senko);
+//     // console.log(SenkoV2);
+//     // console.log(SenkoV3);
+//     console.log("SeibaDown Number", SeibasNumber)
+//     console.log("HolosNumber", HolosNumber)
+//     // console.log(Holo)
+//     console.log("Holo length", Holo.length)
+//     console.log("SenkoV3 Length", SenkoV3.length)
+// })
