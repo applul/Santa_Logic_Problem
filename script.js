@@ -24,7 +24,7 @@ fs.readFile('./input.txt', (err, data) => {
     console.log("Final Answer:", FinalAnswer)
     console.timeEnd("Santa's Challenge")
 
-//     // console.log(Senko);
+    console.log(Senko);
 //     // console.log(SenkoV2);
 //     // console.log(SenkoV3);
 //     console.log("SeibaDown Number", SeibasNumber)
